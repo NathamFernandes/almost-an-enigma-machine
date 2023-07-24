@@ -66,6 +66,8 @@ def digitarPalavraCripto(palavra):
             print('Rotor 3: ', rotor_3, '\n')
             index_alfabeto = alfabeto.index(n)
             primeira_letra_cripto = rotor_1[index_alfabeto]
+            index_rotor_2 = rotor_2.index(primeira_letra_cripto)
+            letra_cripto_final = rotor_3[index_rotor_2]
             letra_rotada_1 = rotor_1.pop(25)
             rotor_1.insert(0, letra_rotada_1)
             print('- Have you finished a rotor cycle? ', letra_rotada_1 == rotor_inicial_1[0], '\n')
@@ -75,8 +77,6 @@ def digitarPalavraCripto(palavra):
                 if letra_rotada_2 == rotor_inicial_2[0]:
                     letra_rotada_3 = rotor_3.pop(25)
                     rotor_3.insert(0, letra_rotada_3)
-            index_rotor_2 = rotor_2.index(primeira_letra_cripto)
-            letra_cripto_final = rotor_3[index_rotor_2]
             mensagem_cripto.append(letra_cripto_final)
 
 def digitarPalavraUncripto(palavra):
