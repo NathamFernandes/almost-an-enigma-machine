@@ -31,7 +31,7 @@ print('Rotor 3 configuration: ', rotor_3, '\n')
 mensagem_cripto = []
 mensagem_uncripto = []
 
-## Functions to crypt and decrypt the message.
+## Functions to encrypt and decrypt the message.
 
 ## The functions works in such way that it's pretty similar to the real rotors of Enigma. First of all, at least one of them
 ## rotates when a character of the word is read by the program. When the complete rotation of the first rotor is done, the
